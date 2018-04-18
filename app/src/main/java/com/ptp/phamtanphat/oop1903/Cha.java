@@ -5,13 +5,31 @@ package com.ptp.phamtanphat.oop1903;
  */
 
 public class Cha {
-    public String Ten;
-    public String Namsinh;
-    LopCon lopCon;
+    private String Ten;
+    private int Tuoi;
 
-    public Cha(String ten, String namsinh, LopCon lopCon) {
+    public Cha(String ten, int tuoi) {
         Ten = ten;
-        Namsinh = namsinh;
-        this.lopCon = lopCon;
+        setTuoi(tuoi);
+    }
+
+    public int getTuoi() {
+        return Tuoi;
+    }
+
+    public void setTuoi(int tuoi) {
+        if (tuoi <= 10){
+            Tuoi = 30;
+        }else{
+            Tuoi = tuoi;
+        }
+    }
+
+    public String getTen() {
+        return Ten;
+    }
+
+    public void setTen(String ten) {
+        Ten = ten;
     }
 }

@@ -5,5 +5,5 @@ package com.ptp.phamtanphat.oop1903;
  */
 
 public class LopCon{
-    public String QueQuan;
+
 }

@@ -54,7 +54,11 @@ public class MainActivity extends AppCompatActivity{
 //        +  Hanh vi set la trinh do (1 - <6) = Hoc mam non (6 - <12) = hoc cap 1 ,(12 - <17) = hoc cap 2, (>=17) Da di lam
 //        +  Hanh vi in ra trinh do
 
-        Cha cha1 = new Cha("Nguyen van a",9);
-        Toast.makeText(this, cha1.getTuoi() + "", Toast.LENGTH_SHORT).show();
+//        Cha cha1 = new Cha("Nguyen van a",9);
+//        Toast.makeText(this, cha1.getTuoi() + "", Toast.LENGTH_SHORT).show();
+
+        LopCon lopCon = new LopCon(1,"17");
+
+        Toast.makeText(this, lopCon.getTrinhDo(), Toast.LENGTH_SHORT).show();
     }
 }
